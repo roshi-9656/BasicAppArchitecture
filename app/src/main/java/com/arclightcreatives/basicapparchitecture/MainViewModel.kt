@@ -1,8 +1,9 @@
 package com.arclightcreatives.basicapparchitecture
 
 import androidx.databinding.ObservableField
+import androidx.lifecycle.ViewModel
 
-class MainViewModel {
+class MainViewModel : ViewModel() {
 
     var repository = Repository()
     val status = ObservableField<String>()
